@@ -1,0 +1,31 @@
+# OS or Editor folders
+.DS_Store
+
+# Folders to ignore
+node_modules/
+projects
+/build
+
+temp/
+nbproject/private/
+build/
+target/
+
+# eclipse
+.settings
+.classpath
+.project
+
+# netbeans
+*/nb-configuration.xml
+
+# log4j folders
+logs/
+
+## idea
+.idea
+/out/
+
+target/
+
+.gradle

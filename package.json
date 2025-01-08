@@ -1,0 +1,40 @@
+{
+    "name": "javatmp",
+    "version": "0.0.18",
+    "private": true,
+    "description": "JavaTMP - Java Bootstrap Admin And Dashboard Template",
+    "main": "readme.md",
+    "scripts": {
+        "test": "echo \"Error: no test specified\" && exit 1"
+    },
+    "repository": {
+        "type": "git",
+        "url": "git+https://github.com/JavaTMP/JavaTMP.git"
+    },
+    "author": "JavaTMP",
+    "license": "JavaTMP License",
+    "bugs": {
+        "url": "https://github.com/JavaTMP/JavaTMP/issues"
+    },
+    "homepage": "http://javatmp.com",
+    "devDependencies": {
+        "del": "^6.0.0",
+        "gulp": "^4.0.2",
+        "gulp-chmod": "^3.0.0",
+        "gulp-concat": "^2.6.1",
+        "gulp-connect": "^5.7.0",
+        "gulp-eslint": "^6.0.0",
+        "gulp-git": "^2.10.1",
+        "gulp-header": "^2.0.9",
+        "gulp-htmlmin": "^5.0.1",
+        "gulp-if": "^3.0.0",
+        "gulp-markdown": "^6.0.0",
+        "gulp-processhtml": "^1.2.0",
+        "gulp-rename": "^2.0.0",
+        "gulp-uglify": "^3.0.2",
+        "gulp-zip": "^5.1.0",
+        "pump": "^3.0.0",
+        "run-sequence": "^2.2.1",
+        "maven": "^5.0.0"
+    }
+}
