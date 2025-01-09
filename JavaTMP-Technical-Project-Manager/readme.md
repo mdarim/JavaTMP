@@ -27,7 +27,8 @@ requirements.
 
 - Provide technical guidance and leadership in the design, development, and deployment of
   Spring Boot applications.
-- Ensure the adoption of best practices for coding, testing, and deployment to maintain
+- Ensure the [adoption of best practices](adoption-of-java-spring-boot-cloud-best-practices.md) for coding, testing, and deployment to 
+  maintain
   high-quality software standards.
 - Stay current with industry trends and advancements in Java
   and [Spring Boot technologies](Spring-Boot-technologies.md)
