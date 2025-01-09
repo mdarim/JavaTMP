@@ -61,11 +61,11 @@ include 'spring-boot-miscellaneous:spring-boot-bitcoin'
 include 'spring-boot-cache:spring-boot-cache-simple'
 include 'spring-boot-cache:spring-boot-cache-redis'
 
-include 'spring-boot-webservices:spring-boot-soap-producer'
-include 'spring-boot-webservices:spring-boot-soap-consumer'
-include 'spring-boot-webservices:spring-boot-web-services'
-include 'spring-boot-webservices:spring-boot-web-service-cxf'
-include 'spring-boot-webservices:spring-boot-web-services-client'
+//include 'spring-boot-webservices:spring-boot-soap-producer'
+//include 'spring-boot-webservices:spring-boot-soap-consumer'
+//include 'spring-boot-webservices:spring-boot-web-services'
+//include 'spring-boot-webservices:spring-boot-web-service-cxf'
+//include 'spring-boot-webservices:spring-boot-web-services-client'
 
 
 include 'spring-boot-integration:spring-boot-rabbitmq'
@@ -141,6 +141,8 @@ include 'spring-boot-cryptography-collection:spring-boot-cryptography-Bouncy-Cas
 include 'spring-boot-cryptography-collection:spring-boot-cryptography-bc-fips'
 include 'spring-boot-cryptography-collection:spring-boot-beginning-cryptography-with-java'
 include 'spring-boot-cryptography-collection:spring-boot-cryptography-cms'
+
+include 'spring-boot-projects:spring-boot-native-storage'
 
 rootProject.children.each {project ->
     println "child project is : ${project.name}"
