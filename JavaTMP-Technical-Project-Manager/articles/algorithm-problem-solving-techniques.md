@@ -1,4 +1,6 @@
-Algorithm problem-solving techniques involve a structured approach to breaking down a problem, devising a plan to solve it, and implementing that plan efficiently. Here are several key techniques and strategies for solving algorithmic problems:
+Algorithm problem-solving techniques involve a structured approach to breaking down a
+problem, devising a plan to solve it, and implementing that plan efficiently. Here are
+several key techniques and strategies for solving algorithmic problems:
 
 ### 1. **Understand the Problem**
 - **Read the problem statement carefully**: Ensure you understand all aspects of the problem, including constraints and edge cases.

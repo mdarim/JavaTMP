@@ -100,6 +100,24 @@ requirements.
 - Ability to manage multiple priorities and work under pressure.
 - [Strong organizational and project management skills](organizational-and-project-management-skills.md).
 
+## Extra Links
+
+- [main documents for system analyst](system-analyst-documents.md)
+- [Java Technical Lead Interview Questions](Java-Technical-Lead-Interview-Questions.md)
+- [Algorithm problem-solving techniques](articles/algorithm-problem-solving-techniques.md)
+- [best front-end framework for spring cloud](articles/best-front-end-framework-for-spring-cloud-to-create-dashboard.md)
+- [Development Manager and a Technical Manager](articles/development-vs-technical-manager.md)
+- [Disadvantages of using oracle apex](articles/disadvantages-of-using-oracle-apex.md)
+- [Java Spring Cloud Development Manager](articles/Java-Spring-Cloud-Development-Manager-job-description.md)
+- [Java Spring Cloud development and production environment](articles/Java-Spring-Cloud-environments.md)
+- [Java Spring Cloud Skills](articles/Java-Spring-Cloud-skills.md)
+- [Kendo UI and DevExtreme](articles/KendoUI-vs-DevExtreme.md)
+- [Mastering microservices with Spring Cloud](articles/master-microservices-with-spring-cloud.md)
+- [Oracle Application Express](articles/oracle-apex-main-features.md)
+- [Java Spring Cloud development environments tools](articles/preparing-Java-Spring-Cloud-development-environments-tools.md)
+- [Problem solving techniques](articles/problem-solving-techniques.md)
+- [Scrum Agile framework](articles/Scrum-agile-framework.md)
+- [Scrum Experiences](articles/scrum-experiences.md)
 ---
 
 This job description aims to attract candidates with both technical expertise in Java
