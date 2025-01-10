@@ -112,6 +112,7 @@ requirements.
 - [Java Spring Cloud Development Manager](articles/Java-Spring-Cloud-Development-Manager-job-description.md)
 - [Java Spring Cloud development and production environment](articles/Java-Spring-Cloud-environments.md)
 - [Java Spring Cloud Skills](articles/Java-Spring-Cloud-skills.md)
+- [distributed system Support in spring boot cloud](articles/distributed-system-Support-in-spring-boot-cloud.md)  
 - [Kendo UI and DevExtreme](articles/KendoUI-vs-DevExtreme.md)
 - [Mastering microservices with Spring Cloud](articles/master-microservices-with-spring-cloud.md)
 - [Oracle Application Express](articles/oracle-apex-main-features.md)
