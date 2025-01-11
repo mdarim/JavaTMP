@@ -8,12 +8,49 @@ import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.List;
 import java.util.function.BiFunction;
+import java.util.function.Consumer;
 import java.util.function.Function;
 import java.util.function.Supplier;
 
 @SpringBootTest
 @Slf4j
 public class Java8_MethodReferenceOperator_Tests {
+
+    public static <T> T mergeThings(T a, T b, BiFunction<T, T, T> merger) {
+        return merger.apply(a, b);
+    }
+
+    public static String appendStrings(String a, String b) {
+        return a + b;
+    }
+
+    public String appendStrings2(String a, String b) {
+        return a + b;
+    }
+
+    @Test
+    void BiFunction() {
+
+        Java8_MethodReferenceOperator_Tests myApp = new Java8_MethodReferenceOperator_Tests();
+
+        // Calling the method mergeThings with a lambda expression
+        System.out.println(Java8_MethodReferenceOperator_Tests.
+                mergeThings("Hello ", "World!", (a, b) -> a + b));
+
+        // Reference to a static method
+        System.out.println(Java8_MethodReferenceOperator_Tests.
+                mergeThings("Hello ", "World!", Java8_MethodReferenceOperator_Tests::appendStrings));
+
+        // Reference to an instance method of a particular object
+        System.out.println(Java8_MethodReferenceOperator_Tests.
+                mergeThings("Hello ", "World!", myApp::appendStrings2));
+
+        // Reference to an instance method of an arbitrary object of a
+        // particular type
+        System.out.println(Java8_MethodReferenceOperator_Tests.
+                mergeThings("Hello ", "World!", String::concat));
+
+    }
 
     @Test
     void StaticMethodReference() {
