@@ -2,19 +2,17 @@ Here’s a **comprehensive list of key features introduced in each major Java ve
 
 ---
 
-## 🧩 **Java 8 (March 2014) - The Game-Changer**
+## **Java 8 (March 2014) - The Game-Changer**
 
 ### 🔑 **Main Features:**
-- **Lambda Expressions**: Functional programming style.
-- **Stream API**: Processing collections of data.
-- **Optional Class**: Avoid `null` references.
+- [**Lambda Expressions**](java8-lambda-expression.md): Functional programming style.
+- [**Stream API**](java8-stream-api.md): Processing collections of data.
+- [**Optional Class**](java8-optional-class.md): Avoid `null` references.
 - **Default Methods**: Methods in interfaces with default implementation.
 - **Date and Time API (java.time)**: Improved date and time handling.
 - **Functional Interfaces**: Simplified functional programming.
 - **Nashorn JavaScript Engine**: Run JavaScript within Java.
 - **Concurrent Additions**: New methods in `ConcurrentHashMap`.
-
-see more [Spring Boot Java Features Starter Project](/JavaTMP-Java-Features/readme.md)
 
 ---
 
