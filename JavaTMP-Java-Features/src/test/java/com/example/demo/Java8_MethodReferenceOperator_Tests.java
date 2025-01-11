@@ -31,6 +31,18 @@ public class Java8_MethodReferenceOperator_Tests {
 
         // Using instance method reference
         names.forEach(System.out::println);
+
+        List<Integer> numbers = Arrays.asList(5, 3, 50, 24, 40, 2, 9, 18);
+        numbers.stream()
+                .sorted((a, b) -> a.compareTo(b))
+                .forEach((n)-> System.out.println(n));
+
+        System.out.println("*** using references");
+        numbers.stream()
+                .sorted(Integer::compareTo)
+                .forEach(System.out::println);
+
+
     }
 
     @Test
