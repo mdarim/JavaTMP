@@ -20,11 +20,11 @@ Here’s a **comprehensive list of key features introduced in each major Java ve
 
 ### 🔑 **Main Features:**
 - [**Java Platform Module System (Project Jigsaw)**](java9-platform-module-system.md): Modularization of the JDK.
-- **JShell**: Interactive REPL (Read-Eval-Print Loop) for Java.
-- **Improved Stream API**: New methods like `takeWhile()`, `dropWhile()`.
-- **Factory Methods for Collections**: `List.of()`, `Set.of()`, `Map.of()`.
-- **Private Methods in Interfaces**: Reusable methods in interfaces.
-- **HTTP/2 Client (Incubator)**: New HTTP client API.
+- [**JShell**](java9-jshell.md): Interactive REPL (Read-Eval-Print Loop) for Java.
+- [**Improved Stream API**](java9-Improved-Stream-api-and-add-new-methods.md): New methods like `takeWhile()`, `dropWhile()`.
+- [**Factory Methods for Collections**](java9-factory-methods-for-collections.md): `List.of()`, `Set.of()`, `Map.of()`.
+- [**Private Methods in Interfaces**](java9-private-methods-in-interfaces.md): Reusable methods in interfaces.
+- [**HTTP/2 Client (Incubator)**](java11-http-client-api.md): New HTTP client API.
 
 ---
 
@@ -41,7 +41,7 @@ Here’s a **comprehensive list of key features introduced in each major Java ve
 ## 🧩 **Java 11 (September 2018) - Long-Term Support (LTS)**
 
 ### 🔑 **Main Features:**
-- **HTTP Client API**: Fully implemented and non-incubator.
+- [**HTTP Client API**](java11-http-client-api.md): Fully implemented and non-incubator.
 - **String Methods**: `isBlank()`, `lines()`, `repeat()`.
 - **File Methods**: `readString()`, `writeString()`.
 - **Lambda Enhancements**: `var` usage in lambda parameters.
