@@ -1,6 +1,6 @@
 package com.javatmp.demo.validation.service;
 
-import javax.validation.Valid;
+import jakarta.validation.Valid;
 
 import com.javatmp.demo.validation.entity.Input;
 import org.springframework.stereotype.Service;

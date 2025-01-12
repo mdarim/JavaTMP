@@ -2,7 +2,7 @@ package com.javatmp.demo.cache;
 
 import lombok.*;
 import org.springframework.data.redis.core.RedisHash;
-import javax.persistence.Id;
+import jakarta.persistence.Id;
 
 
 @Data

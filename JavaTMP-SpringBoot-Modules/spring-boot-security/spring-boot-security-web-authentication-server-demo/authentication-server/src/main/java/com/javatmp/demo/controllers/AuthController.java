@@ -3,12 +3,12 @@ package com.javatmp.demo.controllers;
 import com.javatmp.demo.entities.Otp;
 import com.javatmp.demo.entities.User;
 import com.javatmp.demo.services.UserService;
+import jakarta.servlet.http.HttpServletResponse;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RestController;
 
-import javax.servlet.http.HttpServletResponse;
 
 @RestController
 public class AuthController {

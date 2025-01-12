@@ -21,8 +21,30 @@ plugins {
     id 'idea'
     id 'eclipse'
     id 'org.springframework.boot' version "${springBoot}" apply false
-    id 'io.spring.dependency-management' version "${dependencyManagement}"
+//    id 'io.spring.dependency-management' version "${dependencyManagement}"
 }
+
+apply plugin: 'io.spring.dependency-management'
+
+java {
+    toolchain {
+        languageVersion = JavaLanguageVersion.of(23) // or your desired version
+    }
+}
+
+
+tasks.withType(JavaCompile).configureEach {
+    options.compilerArgs.addAll([
+            '--add-exports', 'java.base/sun.security.x509=ALL-UNNAMED'
+    ])
+}
+
+tasks.withType(JavaExec).configureEach {
+    jvmArgs.addAll([
+            '--add-exports', 'java.base/sun.security.x509=ALL-UNNAMED'
+    ])
+}
+
 // also https://stackoverflow.com/questions/28404149/how-to-download-javadocs-and-sources-for-jar-using-gradle-2-0
 eclipse {
     classpath {
@@ -41,15 +63,15 @@ idea {
 allprojects {
     group = 'com.example'
     version = '0.0.1-SNAPSHOT'
-    sourceCompatibility = '1.8'
-    targetCompatibility = '1.8'
+    sourceCompatibility = JavaLanguageVersion.of(23)
+    targetCompatibility = JavaLanguageVersion.of(23)
 
 }
 
 subprojects {
     apply plugin: 'org.springframework.boot'
     apply plugin: 'io.spring.dependency-management'
-    apply plugin: 'java-library'
+//    apply plugin: 'java-library'
     apply plugin: 'java'
 
     repositories {
@@ -81,6 +103,9 @@ subprojects {
         testImplementation('org.springframework.boot:spring-boot-starter-test') {
             exclude group: 'org.junit.vintage', module: 'junit-vintage-engine'
         }
+
+        implementation 'jakarta.xml.bind:jakarta.xml.bind-api'
+        implementation 'org.glassfish.jaxb:jaxb-runtime'
     }
 
     configurations {

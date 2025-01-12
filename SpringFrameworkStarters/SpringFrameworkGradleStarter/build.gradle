@@ -5,8 +5,8 @@ plugins {
 group 'com.javatmp.demo'
 version '1.0-SNAPSHOT'
 
-sourceCompatibility = 1.8
-targetCompatibility = 1.8
+sourceCompatibility = JavaVersion.VERSION_23
+targetCompatibility = JavaVersion.VERSION_23
 
 // https://stackoverflow.com/questions/30860669/what-is-gradle-missing-to-map-hibernate
 // https://discuss.gradle.org/t/jpa-entity-classes-are-not-discovered-automatically-with-gradle/11339

@@ -8,11 +8,11 @@ Here’s a **comprehensive list of key features introduced in each major Java ve
 - [**Lambda Expressions**](java8-lambda-expression.md): Functional programming style.
 - [**Stream API**](java8-stream-api.md): Processing collections of data.
 - [**Optional Class**](java8-optional-class.md): Avoid `null` references.
-- **Default Methods**: Methods in interfaces with default implementation.
-- **Date and Time API (java.time)**: Improved date and time handling.
-- **Functional Interfaces**: Simplified functional programming.
-- **Nashorn JavaScript Engine**: Run JavaScript within Java.
-- **Concurrent Additions**: New methods in `ConcurrentHashMap`.
+- [**Default Methods**](java8-default-method.md): Methods in interfaces with default implementation.
+- [**Date and Time API (java.time)**](java8-date-time-api.md): Improved date and time handling.
+- [**Functional Interfaces**](java8-functional-interfaces.md): Simplified functional programming.
+- [**Nashorn JavaScript Engine**](java8-nashorn-javaScript-engine.md): Run JavaScript within Java.
+- [**Concurrent Additions**](java8-ConcurrentHashMap.md): New methods in `ConcurrentHashMap`.
 
 ---
 

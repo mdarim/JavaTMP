@@ -18,6 +18,9 @@ import org.springframework.security.crypto.password.Pbkdf2PasswordEncoder;
 import org.springframework.security.crypto.password.StandardPasswordEncoder;
 import org.springframework.security.crypto.scrypt.SCryptPasswordEncoder;
 
+import org.springframework.security.crypto.password.Pbkdf2PasswordEncoder;
+import org.springframework.security.crypto.password.PasswordEncoder;
+
 import java.security.SecureRandom;
 
 /**
@@ -39,9 +42,10 @@ public class DemoApplication {
             PasswordEncoder standardPasswordEncoder = new StandardPasswordEncoder();
             PasswordEncoder standardPasswordEncoder1 = new StandardPasswordEncoder("secret");
 
-            PasswordEncoder pbkdf2PasswordEncoder = new Pbkdf2PasswordEncoder();
-            PasswordEncoder pbkdf2PasswordEncoder1 = new Pbkdf2PasswordEncoder("secret");
-            PasswordEncoder pbkdf2PasswordEncoder2 = new Pbkdf2PasswordEncoder("secret", 185000, 256);
+            PasswordEncoder pbkdf2PasswordEncoder = Pbkdf2PasswordEncoder.defaultsForSpringSecurity_v5_8();
+//            PasswordEncoder pbkdf2PasswordEncoder1 = new Pbkdf2PasswordEncoder("secret");
+            PasswordEncoder pbkdf2PasswordEncoder1 = new Pbkdf2PasswordEncoder("secretsecret", 185000, 256, Pbkdf2PasswordEncoder.SecretKeyFactoryAlgorithm.PBKDF2WithHmacSHA1);
+            PasswordEncoder pbkdf2PasswordEncoder2 = new Pbkdf2PasswordEncoder("secret", 185000, 256, Pbkdf2PasswordEncoder.SecretKeyFactoryAlgorithm.PBKDF2WithHmacSHA1);
 
             PasswordEncoder bCryptPasswordEncoder = new BCryptPasswordEncoder();
             PasswordEncoder bCryptPasswordEncoder1 = new BCryptPasswordEncoder(4);
@@ -49,7 +53,7 @@ public class DemoApplication {
             SecureRandom secureRandom = SecureRandom.getInstanceStrong();
             PasswordEncoder bCryptPasswordEncoder2 = new BCryptPasswordEncoder(4, secureRandom);
 
-            PasswordEncoder sCryptPasswordEncoder = new SCryptPasswordEncoder();
+            PasswordEncoder sCryptPasswordEncoder = SCryptPasswordEncoder.defaultsForSpringSecurity_v5_8();
             // The SCryptPasswordEncoder constructor takes five parameters
             // and allows you to configure
             // CPU cost, memory cost, key length, and salt length.
@@ -107,7 +111,7 @@ public class DemoApplication {
             valueToEncrypt = "HELLO";
 
             TextEncryptor e1 =
-                    Encryptors.queryableText(password, salt);
+                    Encryptors.text(password, salt);
             String encrypted1 = e1.encrypt(valueToEncrypt);
             String encrypted2 = e1.encrypt(valueToEncrypt);
 

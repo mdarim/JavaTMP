@@ -44,7 +44,7 @@ include 'spring-boot-threading:spring-boot-async'
 include 'spring-boot-threading:spring-boot-quartz'
 include 'spring-boot-threading:spring-boot-quartz-config'
 include 'spring-boot-threading:spring-boot-quartz-advance'
-include 'spring-boot-threading:spring-boot-batch'
+//include 'spring-boot-threading:spring-boot-batch'
 
 include 'spring-boot-management:spring-boot-actuator'
 

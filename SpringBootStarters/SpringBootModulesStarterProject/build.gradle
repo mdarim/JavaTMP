@@ -14,8 +14,8 @@ plugins {
 allprojects {
     group = 'com.example'
     version = '0.0.1-SNAPSHOT'
-    sourceCompatibility = '1.8'
-    targetCompatibility = '1.8'
+    sourceCompatibility = JavaVersion.VERSION_23
+    targetCompatibility = JavaVersion.VERSION_23
 }
 
 subprojects {

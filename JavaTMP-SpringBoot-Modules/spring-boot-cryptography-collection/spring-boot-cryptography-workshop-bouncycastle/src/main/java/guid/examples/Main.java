@@ -1,6 +1,6 @@
 package guid.examples;
 
-import javax.xml.bind.DatatypeConverter;
+import jakarta.xml.bind.DatatypeConverter;
 import java.io.*;
 import java.security.KeyStore;
 import java.security.KeyStoreException;

@@ -18,7 +18,6 @@ import org.bouncycastle.pkcs.PKCS10CertificationRequestBuilder;
 import org.bouncycastle.pkcs.jcajce.JcaPKCS10CertificationRequestBuilder;
 import org.bouncycastle.util.io.pem.PemObject;
 import org.bouncycastle.util.io.pem.PemWriter;
-import org.springframework.util.Base64Utils;
 
 import javax.security.auth.x500.X500Principal;
 import java.io.IOException;
@@ -28,6 +27,7 @@ import java.nio.charset.StandardCharsets;
 import java.security.KeyPair;
 import java.security.KeyPairGenerator;
 import java.security.NoSuchAlgorithmException;
+import java.util.Base64;
 import java.util.Vector;
 
 /**
@@ -57,7 +57,7 @@ public class PKCS10ExtensionExample {
         pemWriter.writeObject(pem);
         pemWriter.close();
         str.close();
-        return Base64Utils.encodeToString(
+        return Base64.getEncoder().encodeToString(
                 str.toString().getBytes(StandardCharsets.UTF_8));
 
     }

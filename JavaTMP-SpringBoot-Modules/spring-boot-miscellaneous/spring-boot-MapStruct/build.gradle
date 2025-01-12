@@ -2,7 +2,7 @@ ext {
     mapstructVersion = "1.5.0.Beta1"
 }
 
-sourceCompatibility = JavaVersion.VERSION_1_8
+sourceCompatibility = JavaVersion.VERSION_23
 
 dependencies {
     implementation "org.mapstruct:mapstruct:${mapstructVersion}"

@@ -38,9 +38,9 @@ public class ResourceServerConfig extends ResourceServerConfigurerAdapter {
 
     @Override
     public void configure(HttpSecurity http) throws Exception {
-        http.authorizeRequests()
-                .mvcMatchers(HttpMethod.DELETE, "/**").hasAuthority("fitnessadmin")
-                .anyRequest().authenticated();
+        http.authorizeHttpRequests((authz) ->
+                authz.requestMatchers(HttpMethod.DELETE, "/**").hasAuthority("fitnessadmin")
+                        .anyRequest().authenticated());
     }
 
     @Bean

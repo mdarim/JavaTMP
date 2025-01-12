@@ -1,6 +1,6 @@
 package com.javatmp.demo.entities;
 
-import javax.persistence.*;
+import jakarta.persistence.*;
 
 @Entity
 public class Authority {

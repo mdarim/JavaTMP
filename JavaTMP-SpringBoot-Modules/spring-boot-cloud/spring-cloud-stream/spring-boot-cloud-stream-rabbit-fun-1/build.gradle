@@ -24,5 +24,8 @@ dependencies {
     implementation 'org.springframework.cloud:spring-cloud-starter-stream-rabbit'
     testImplementation 'org.springframework.cloud:spring-cloud-stream::test-binder'
     testImplementation('org.springframework.cloud:spring-cloud-stream-test-support')
+
+    implementation project(":spring-boot-cloud:spring-cloud-stream:spring-boot-cloud-stream-rabbit-fun")
+
 }
 

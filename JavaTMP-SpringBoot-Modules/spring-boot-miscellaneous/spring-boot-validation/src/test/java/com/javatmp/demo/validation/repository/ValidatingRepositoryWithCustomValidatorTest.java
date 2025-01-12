@@ -1,7 +1,7 @@
 package com.javatmp.demo.validation.repository;
 
-import javax.persistence.EntityManager;
-import javax.validation.ConstraintViolationException;
+import jakarta.persistence.EntityManager;
+import jakarta.validation.ConstraintViolationException;
 
 import com.javatmp.demo.validation.entity.InputWithCustomValidator;
 import org.junit.jupiter.api.Assertions;

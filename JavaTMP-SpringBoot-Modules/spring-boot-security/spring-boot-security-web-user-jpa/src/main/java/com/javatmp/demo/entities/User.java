@@ -2,7 +2,7 @@ package com.javatmp.demo.entities;
 
 import com.javatmp.demo.entities.enums.EncryptionAlgorithm;
 
-import javax.persistence.*;
+import jakarta.persistence.*;
 import java.util.List;
 
 @Entity

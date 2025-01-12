@@ -7,8 +7,11 @@ import org.springframework.context.ApplicationContext;
 import org.springframework.context.ApplicationContextAware;
 import org.springframework.stereotype.Component;
 
-import javax.annotation.PostConstruct;
-import javax.annotation.PreDestroy;
+// todo: use org.springframework.beans.factory.InitializingBean or
+// // https://mvnrepository.com/artifact/javax.annotation/javax.annotation-api
+//implementation("javax.annotation:javax.annotation-api:1.3.2")
+import jakarta.annotation.PostConstruct;
+import jakarta.annotation.PreDestroy;
 
 @Component
 @Slf4j

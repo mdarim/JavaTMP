@@ -3,7 +3,7 @@ package com.javatmp.demo.jpa.entity;
 import com.javatmp.demo.jpa.entity.base.AbstractAuditModel;
 import lombok.*;
 
-import javax.persistence.*;
+import jakarta.persistence.*;
 import java.util.Collection;
 import java.util.Date;
 

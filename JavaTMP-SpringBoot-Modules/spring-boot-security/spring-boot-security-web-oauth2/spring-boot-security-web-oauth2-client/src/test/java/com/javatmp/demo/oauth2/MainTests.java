@@ -1,6 +1,6 @@
 package com.javatmp.demo.oauth2;
 
-import com.laurentiuspilca.ssia.config.MockCustomUser;
+import com.javatmp.demo.oauth2.config.MockCustomUser;
 import org.junit.jupiter.api.DisplayName;
 import org.junit.jupiter.api.Test;
 import org.springframework.beans.factory.annotation.Autowired;

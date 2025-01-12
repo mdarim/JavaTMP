@@ -3,7 +3,7 @@ package com.javatmp.demo.entities;
 
 import com.javatmp.demo.entities.enums.Currency;
 
-import javax.persistence.*;
+import jakarta.persistence.*;
 
 @Entity
 public class Product {

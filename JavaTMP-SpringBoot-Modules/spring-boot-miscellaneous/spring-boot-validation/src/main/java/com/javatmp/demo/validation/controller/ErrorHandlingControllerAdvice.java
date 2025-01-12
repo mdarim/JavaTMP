@@ -1,7 +1,7 @@
 package com.javatmp.demo.validation.controller;
 
-import javax.validation.ConstraintViolation;
-import javax.validation.ConstraintViolationException;
+import jakarta.validation.ConstraintViolation;
+import jakarta.validation.ConstraintViolationException;
 
 import com.javatmp.demo.validation.validator.ValidationErrorResponse;
 import com.javatmp.demo.validation.validator.Violation;
