@@ -10,7 +10,7 @@ import org.springframework.context.annotation.Bean;
 import java.util.stream.IntStream;
 
 /**
- * Spring Boot Main Runner Class
+ * Spring Boot Main Runner Class. starting point of the application
  */
 @SpringBootApplication
 @Slf4j
