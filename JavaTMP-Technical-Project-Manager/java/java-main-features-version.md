@@ -19,7 +19,7 @@ Here’s a **comprehensive list of key features introduced in each major Java ve
 ## 🧩 **Java 9 (September 2017) - The Modular Java**
 
 ### 🔑 **Main Features:**
-- **Java Platform Module System (Project Jigsaw)**: Modularization of the JDK.
+- [**Java Platform Module System (Project Jigsaw)**](java9-platform-module-system.md): Modularization of the JDK.
 - **JShell**: Interactive REPL (Read-Eval-Print Loop) for Java.
 - **Improved Stream API**: New methods like `takeWhile()`, `dropWhile()`.
 - **Factory Methods for Collections**: `List.of()`, `Set.of()`, `Map.of()`.
