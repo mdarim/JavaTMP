@@ -143,7 +143,7 @@ These features focus on performance improvements, language enhancements, APIs, a
 
 ### 🔑 **Main Features:**
 
-- **Virtual Threads (Preview)**: Lightweight threads for scalability.
+- [**Virtual Threads (Preview)**](java21-virtual-threads.md): Lightweight threads for scalability.
 - **Structured Concurrency (Preview)**: Simplifies handling multiple concurrent tasks.
 - **Pattern Matching for Switch**: Further refined.
 
@@ -153,7 +153,7 @@ These features focus on performance improvements, language enhancements, APIs, a
 
 ### 🔑 **Main Features:**
 
-- **Virtual Threads (Second Preview)**: Continued improvements.
+- [**Virtual Threads (Second Preview)**](java21-virtual-threads.md): Continued improvements.
 - **Record Patterns (Preview)**: Destructuring patterns for data classes.
 - **Pattern Matching for Switch**: Finalized feature.
 
@@ -163,7 +163,7 @@ These features focus on performance improvements, language enhancements, APIs, a
 
 ### 🔑 **Main Features:**
 
-- **Virtual Threads**: Finalized feature from Project Loom.
+- [**Virtual Threads**](java21-virtual-threads.md): Finalized feature from Project Loom.
 - **Sequenced Collections**: New collections that maintain order.
 - **Record Patterns**: Finalized feature.
 - **Pattern Matching for `switch`**: Finalized feature.
@@ -186,9 +186,9 @@ These features focus on performance improvements, language enhancements, APIs, a
 | Java 16          | [Records](java16-records.md), Stream.toList()                                                                          | Minor    |
 | Java 17          | [Sealed Classes](java17-sealed-classes.md), Pattern Matching for Switch                                                | LTS      |
 | Java 18          | UTF-8 by Default, Simple Web Server                                                                                    | Minor    |
-| Java 19          | Virtual Threads (Preview), Structured Concurrency                                                                      | Major    |
-| Java 20          | Virtual Threads (Second Preview), Record Patterns                                                                      | Minor    |
-| Java 21          | Virtual Threads, Sequenced Collections, String Templates                                                               | LTS      |
+| Java 19          | [Virtual Threads (Preview)](java21-virtual-threads.md), Structured Concurrency                                         | Major    |
+| Java 20          | [Virtual Threads (Second Preview)](java21-virtual-threads.md), Record Patterns                                         | Minor    |
+| Java 21          | [Virtual Threads](java21-virtual-threads.md), Sequenced Collections, String Templates                                  | LTS      |
 
 ---
 
@@ -196,7 +196,8 @@ These features focus on performance improvements, language enhancements, APIs, a
 
 - **Java 8, Java 11, Java 17, and Java 21** are the **LTS versions**, widely adopted by
   enterprises.
-- **Key modern features** include **Virtual Threads**, [**Records**](java16-records.md), **Pattern Matching**,
+- **Key modern features** include [**Virtual Threads**](java21-virtual-threads.md), 
+  [**Records**](java16-records.md), **Pattern Matching**,
   and **String Templates** to simplify code and improve performance.
 
 By understanding these features, you can stay current with Java’s latest enhancements and
