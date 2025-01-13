@@ -90,8 +90,8 @@ These features focus on performance improvements, language enhancements, APIs, a
 
 ### 🔑 **Main Features:**
 
-- **Pattern Matching for `instanceof` (Preview)**: Simplified type checks.
-- **Records (Preview)**: Data classes with minimal boilerplate.
+- [**Pattern Matching for `instanceof` (Preview)**](java16-pattern-matching-for-instanceof.md): Simplified type checks.
+- [**Records (Preview)**](java16-records.md): Data classes with minimal boilerplate.
 - [**Switch Expressions**](java14-switch-expressions.md): Finalized feature.
 
 ---
@@ -110,8 +110,9 @@ These features focus on performance improvements, language enhancements, APIs, a
 
 ### 🔑 **Main Features:**
 
-- **Records**: Finalized feature.
-- **Pattern Matching for `instanceof`**: Finalized feature.
+- [**Records**](java16-records.md): Finalized feature.
+- [**Pattern Matching for `instanceof`**](java16-pattern-matching-for-instanceof.md): 
+  Finalized feature.
 - **Packaging Tool**: New `jpackage` tool for packaging applications.
 - **Stream.toList()**: Simplified list collection from streams.
 
@@ -172,22 +173,22 @@ These features focus on performance improvements, language enhancements, APIs, a
 
 ## ✅ **Summary of Key Java Features by Version:**
 
-| **Java Version** | **Key Features**                                               | **Type** |
-|------------------|----------------------------------------------------------------|----------|
-| Java 8           | Lambdas, Stream API, Date-Time API                             | Major    |
-| Java 9           | Modules, JShell, Factory Methods for Collections               | Major    |
-| Java 10          | `var` Keyword                                                  | Minor    |
-| Java 11          | HTTP Client API, String Methods                                | LTS      |
-| Java 12          | Switch Expressions (Preview)                                   | Minor    |
-| Java 13          | [Text Blocks](java15-text-blocks.md) (Preview)                 | Minor    |
-| Java 14          | Pattern Matching for `instanceof`, Records (Preview)           | Minor    |
-| Java 15          | [Text Blocks](java15-text-blocks.md), Sealed Classes (Preview) | Minor    |
-| Java 16          | Records, Stream.toList()                                       | Minor    |
-| Java 17          | Sealed Classes, Pattern Matching for Switch                    | LTS      |
-| Java 18          | UTF-8 by Default, Simple Web Server                            | Minor    |
-| Java 19          | Virtual Threads (Preview), Structured Concurrency              | Major    |
-| Java 20          | Virtual Threads (Second Preview), Record Patterns              | Minor    |
-| Java 21          | Virtual Threads, Sequenced Collections, String Templates       | LTS      |
+| **Java Version** | **Key Features**                                                                                                       | **Type** |
+|------------------|------------------------------------------------------------------------------------------------------------------------|----------|
+| Java 8           | Lambdas, Stream API, Date-Time API                                                                                     | Major    |
+| Java 9           | Modules, JShell, Factory Methods for Collections                                                                       | Major    |
+| Java 10          | `var` Keyword                                                                                                          | Minor    |
+| Java 11          | HTTP Client API, String Methods                                                                                        | LTS      |
+| Java 12          | Switch Expressions (Preview)                                                                                           | Minor    |
+| Java 13          | [Text Blocks](java15-text-blocks.md) (Preview)                                                                         | Minor    |
+| Java 14          | [Pattern Matching for `instanceof`](java16-pattern-matching-for-instanceof.md), [Records (Preview)](java16-records.md) | Minor    |
+| Java 15          | [Text Blocks](java15-text-blocks.md), Sealed Classes (Preview)                                                         | Minor    |
+| Java 16          | [Records](java16-records.md), Stream.toList()                                                                          | Minor    |
+| Java 17          | Sealed Classes, Pattern Matching for Switch                                                                            | LTS      |
+| Java 18          | UTF-8 by Default, Simple Web Server                                                                                    | Minor    |
+| Java 19          | Virtual Threads (Preview), Structured Concurrency                                                                      | Major    |
+| Java 20          | Virtual Threads (Second Preview), Record Patterns                                                                      | Minor    |
+| Java 21          | Virtual Threads, Sequenced Collections, String Templates                                                               | LTS      |
 
 ---
 
@@ -195,7 +196,7 @@ These features focus on performance improvements, language enhancements, APIs, a
 
 - **Java 8, Java 11, Java 17, and Java 21** are the **LTS versions**, widely adopted by
   enterprises.
-- **Key modern features** include **Virtual Threads**, **Records**, **Pattern Matching**,
+- **Key modern features** include **Virtual Threads**, [**Records**](java16-records.md), **Pattern Matching**,
   and **String Templates** to simplify code and improve performance.
 
 By understanding these features, you can stay current with Java’s latest enhancements and
