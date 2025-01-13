@@ -120,6 +120,10 @@ requirements.
 - [Problem solving techniques](articles/problem-solving-techniques.md)
 - [Scrum Agile framework](articles/Scrum-agile-framework.md)
 - [Scrum Experiences](articles/scrum-experiences.md)
+- [Cloud native development principles with spring](articles/cloud-native-development-principles-with-spring.md)
+- [Use Spring Cloud with Docker and kubernetes](articles/use-spring-cloud-with-docker-and-kubernetes.md)
+  (articles/cloud-native-development-principles-with-spring.md)
+- 
 ---
 
 This job description aims to attract candidates with both technical expertise in Java

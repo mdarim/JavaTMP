@@ -69,7 +69,7 @@ These features focus on performance improvements, language enhancements, APIs, a
 
 ### 🔑 **Main Features:**
 
-- **Switch Expressions (Preview)**: Simplified switch syntax.
+- [**Switch Expressions (Preview)**](java14-switch-expressions.md): Simplified switch syntax.
 - **Garbage Collector Improvements**: G1 GC and Shenandoah GC.
 - **Compact Number Formatting**: New APIs in `java.text`.
 
@@ -80,7 +80,7 @@ These features focus on performance improvements, language enhancements, APIs, a
 ### 🔑 **Main Features:**
 
 - **Text Blocks (Preview)**: Multiline string literals using `"""`.
-- **Switch Expressions (Preview)**: Continued improvements.
+- [**Switch Expressions (Preview)**](java14-switch-expressions.md): Continued improvements.
 
 ---
 
@@ -90,7 +90,7 @@ These features focus on performance improvements, language enhancements, APIs, a
 
 - **Pattern Matching for `instanceof` (Preview)**: Simplified type checks.
 - **Records (Preview)**: Data classes with minimal boilerplate.
-- **Switch Expressions**: Finalized feature.
+- [**Switch Expressions**](java14-switch-expressions.md): Finalized feature.
 
 ---
 
