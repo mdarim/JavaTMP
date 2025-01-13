@@ -58,10 +58,11 @@ These features focus on performance improvements, language enhancements, APIs, a
 
 - [**HTTP Client API**](java11-http-client-api.md): Fully implemented and non-incubator.
 - [**String Methods**](java11-string-methods.md): `isBlank()`, `lines()`, `repeat()`.
-- **File Methods**: `readString()`, `writeString()`.
+- [**File Methods**](advanced-java-file-contents-features.md): `readString()`, `writeString()`.
 - **Lambda Enhancements**: `var` usage in lambda parameters.
 - **Removed Features**: Removed `java.se.ee`, `JavaFX`, and others.
-- **New `Nest-Based Access Control`**: Simplified access between nested classes.
+- [**New `Nest-Based Access Control`**](java11-new-nest-based-access-control.md): Simplified access between nested 
+  classes.
 
 ---
 
@@ -71,7 +72,7 @@ These features focus on performance improvements, language enhancements, APIs, a
 
 - [**Switch Expressions (Preview)**](java14-switch-expressions.md): Simplified switch syntax.
 - **Garbage Collector Improvements**: G1 GC and Shenandoah GC.
-- **Compact Number Formatting**: New APIs in `java.text`.
+- [**Compact Number Formatting**](java12-compact-number-formatting.md): New APIs in `java.text`.
 
 ---
 
@@ -79,7 +80,8 @@ These features focus on performance improvements, language enhancements, APIs, a
 
 ### 🔑 **Main Features:**
 
-- **Text Blocks (Preview)**: Multiline string literals using `"""`.
+- [**Text Blocks (Preview)**](java15-text-blocks.md): Multiline string literals using 
+  `"""`.
 - [**Switch Expressions (Preview)**](java14-switch-expressions.md): Continued improvements.
 
 ---
@@ -98,7 +100,7 @@ These features focus on performance improvements, language enhancements, APIs, a
 
 ### 🔑 **Main Features:**
 
-- **Text Blocks**: Finalized feature.
+- [**Text Blocks**](java15-text-blocks.md): Finalized feature.
 - **Sealed Classes (Preview)**: Control which classes can extend a class.
 - **Hidden Classes**: Used by frameworks to create classes at runtime.
 
@@ -170,22 +172,22 @@ These features focus on performance improvements, language enhancements, APIs, a
 
 ## ✅ **Summary of Key Java Features by Version:**
 
-| **Java Version** | **Key Features**                                         | **Type** |
-|------------------|----------------------------------------------------------|----------|
-| Java 8           | Lambdas, Stream API, Date-Time API                       | Major    |
-| Java 9           | Modules, JShell, Factory Methods for Collections         | Major    |
-| Java 10          | `var` Keyword                                            | Minor    |
-| Java 11          | HTTP Client API, String Methods                          | LTS      |
-| Java 12          | Switch Expressions (Preview)                             | Minor    |
-| Java 13          | Text Blocks (Preview)                                    | Minor    |
-| Java 14          | Pattern Matching for `instanceof`, Records (Preview)     | Minor    |
-| Java 15          | Text Blocks, Sealed Classes (Preview)                    | Minor    |
-| Java 16          | Records, Stream.toList()                                 | Minor    |
-| Java 17          | Sealed Classes, Pattern Matching for Switch              | LTS      |
-| Java 18          | UTF-8 by Default, Simple Web Server                      | Minor    |
-| Java 19          | Virtual Threads (Preview), Structured Concurrency        | Major    |
-| Java 20          | Virtual Threads (Second Preview), Record Patterns        | Minor    |
-| Java 21          | Virtual Threads, Sequenced Collections, String Templates | LTS      |
+| **Java Version** | **Key Features**                                               | **Type** |
+|------------------|----------------------------------------------------------------|----------|
+| Java 8           | Lambdas, Stream API, Date-Time API                             | Major    |
+| Java 9           | Modules, JShell, Factory Methods for Collections               | Major    |
+| Java 10          | `var` Keyword                                                  | Minor    |
+| Java 11          | HTTP Client API, String Methods                                | LTS      |
+| Java 12          | Switch Expressions (Preview)                                   | Minor    |
+| Java 13          | [Text Blocks](java15-text-blocks.md) (Preview)                 | Minor    |
+| Java 14          | Pattern Matching for `instanceof`, Records (Preview)           | Minor    |
+| Java 15          | [Text Blocks](java15-text-blocks.md), Sealed Classes (Preview) | Minor    |
+| Java 16          | Records, Stream.toList()                                       | Minor    |
+| Java 17          | Sealed Classes, Pattern Matching for Switch                    | LTS      |
+| Java 18          | UTF-8 by Default, Simple Web Server                            | Minor    |
+| Java 19          | Virtual Threads (Preview), Structured Concurrency              | Major    |
+| Java 20          | Virtual Threads (Second Preview), Record Patterns              | Minor    |
+| Java 21          | Virtual Threads, Sequenced Collections, String Templates       | LTS      |
 
 ---
 

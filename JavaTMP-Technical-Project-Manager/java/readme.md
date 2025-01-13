@@ -1,6 +1,7 @@
 # Java Related Articles
 
 - [Java Main Features By versions](java-main-features-version.md)
+- [Advanced Java File Contents Features](advanced-java-file-contents-features.md)
 
 ## Upgrade steps:
 - Install OpenJdk [https://jdk.java.net/23/](https://jdk.java.net/23/) 
