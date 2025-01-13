@@ -168,7 +168,7 @@ These features focus on performance improvements, language enhancements, APIs, a
 - [**Virtual Threads**](java21-virtual-threads.md): Finalized feature from Project Loom.
 - **Sequenced Collections**: New collections that maintain order.
 - **Record Patterns**: Finalized feature.
-- **Pattern Matching for `switch`**: Finalized feature.
+- [**Pattern Matching for `switch`**](java-pattern-matching-for-switch.md): Finalized feature.
 - **New `String Templates` (Preview)**: Simplifies string interpolation.
 
 ---
