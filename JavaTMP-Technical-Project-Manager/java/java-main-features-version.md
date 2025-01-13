@@ -102,7 +102,7 @@ These features focus on performance improvements, language enhancements, APIs, a
 
 - [**Text Blocks**](java15-text-blocks.md): Finalized feature.
 - [**Sealed Classes (Preview)**](java17-sealed-classes.md): Control which classes can extend a class.
-- **Hidden Classes**: Used by frameworks to create classes at runtime.
+- [**Hidden Classes**](java15-hidden-classes.md): Used by frameworks to create classes at runtime.
 
 ---
 
@@ -113,8 +113,8 @@ These features focus on performance improvements, language enhancements, APIs, a
 - [**Records**](java16-records.md): Finalized feature.
 - [**Pattern Matching for `instanceof`**](java16-pattern-matching-for-instanceof.md): 
   Finalized feature.
-- **Packaging Tool**: New `jpackage` tool for packaging applications.
-- **Stream.toList()**: Simplified list collection from streams.
+- [**Packaging Tool**](java16-packaging-tool.md): New `jpackage` tool for packaging applications.
+- [**Stream.toList()**](java16-stream-features.md): Simplified list collection from streams.
 
 ---
 
@@ -123,7 +123,7 @@ These features focus on performance improvements, language enhancements, APIs, a
 ### 🔑 **Main Features:**
 
 - [**Sealed Classes**](java17-sealed-classes.md): Finalized feature.
-- **Pattern Matching for Switch (Preview)**: Enhanced switch statement.
+- [**Pattern Matching for Switch (Preview)**](java-pattern-matching-for-switch.md): Enhanced switch statement.
 - **New Garbage Collector (ZGC)**: Improved performance.
 - **Remove Deprecated Features**: Removed **RMI Activation**, **Applets**, and more.
 
@@ -135,7 +135,8 @@ These features focus on performance improvements, language enhancements, APIs, a
 
 - **UTF-8 by Default**: Standardized text encoding.
 - **Simple Web Server**: Lightweight HTTP server for prototyping.
-- **Pattern Matching for Switch (Preview)**: Continued improvements.
+- [**Pattern Matching for Switch (Preview)**](java-pattern-matching-for-switch.md): 
+  Continued improvements.
 
 ---
 
@@ -145,7 +146,7 @@ These features focus on performance improvements, language enhancements, APIs, a
 
 - [**Virtual Threads (Preview)**](java21-virtual-threads.md): Lightweight threads for scalability.
 - **Structured Concurrency (Preview)**: Simplifies handling multiple concurrent tasks.
-- **Pattern Matching for Switch**: Further refined.
+- [**Pattern Matching for Switch**](java-pattern-matching-for-switch.md): Further refined.
 
 ---
 
@@ -155,7 +156,8 @@ These features focus on performance improvements, language enhancements, APIs, a
 
 - [**Virtual Threads (Second Preview)**](java21-virtual-threads.md): Continued improvements.
 - **Record Patterns (Preview)**: Destructuring patterns for data classes.
-- **Pattern Matching for Switch**: Finalized feature.
+- [**Pattern Matching for Switch**](java-pattern-matching-for-switch.md): Finalized 
+  feature.
 
 ---
 
@@ -183,8 +185,8 @@ These features focus on performance improvements, language enhancements, APIs, a
 | Java 13          | [Text Blocks](java15-text-blocks.md) (Preview)                                                                         | Minor    |
 | Java 14          | [Pattern Matching for `instanceof`](java16-pattern-matching-for-instanceof.md), [Records (Preview)](java16-records.md) | Minor    |
 | Java 15          | [Text Blocks](java15-text-blocks.md), [Sealed Classes (Preview)](java17-sealed-classes.md)                             | Minor    |
-| Java 16          | [Records](java16-records.md), Stream.toList()                                                                          | Minor    |
-| Java 17          | [Sealed Classes](java17-sealed-classes.md), Pattern Matching for Switch                                                | LTS      |
+| Java 16          | [Records](java16-records.md), [Stream.toList()](java16-stream-features.md)                                                                | Minor    |
+| Java 17          | [Sealed Classes](java17-sealed-classes.md), [Pattern Matching for Switch](java-pattern-matching-for-switch.md)         | LTS      |
 | Java 18          | UTF-8 by Default, Simple Web Server                                                                                    | Minor    |
 | Java 19          | [Virtual Threads (Preview)](java21-virtual-threads.md), Structured Concurrency                                         | Major    |
 | Java 20          | [Virtual Threads (Second Preview)](java21-virtual-threads.md), Record Patterns                                         | Minor    |

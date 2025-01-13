@@ -204,12 +204,12 @@ java Main
 
 ## 🎯 **Summary of Switch Expression Syntax:**
 
-| **Old Syntax**                 | **New Syntax (Java 14)**                     |
-|--------------------------------|----------------------------------------------|
-| `case value:`                  | `case value ->`                              |
-| Requires `break` to avoid fall-through | No `break` needed                          |
-| Cannot return values           | Returns values directly with `yield`         |
-| Repetitive and verbose         | Concise and expressive                       |
+| **Old Syntax**                         | **New Syntax (Java 14)**             |
+|----------------------------------------|--------------------------------------|
+| `case value:`                          | `case value ->`                      |
+| Requires `break` to avoid fall-through | No `break` needed                    |
+| Cannot return values                   | Returns values directly with `yield` |
+| Repetitive and verbose                 | Concise and expressive               |
 
 ---
 

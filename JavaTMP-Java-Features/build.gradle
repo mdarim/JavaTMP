@@ -48,4 +48,10 @@ dependencies {
 
 test {
     useJUnitPlatform()
+ }
+
+bootTestRun {
+    jvmArgs(['--enable-preview', '-Xmx512m'])
 }
+
+
