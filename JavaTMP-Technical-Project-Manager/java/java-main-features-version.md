@@ -124,7 +124,7 @@ These features focus on performance improvements, language enhancements, APIs, a
 
 - [**Sealed Classes**](java17-sealed-classes.md): Finalized feature.
 - [**Pattern Matching for Switch (Preview)**](java-pattern-matching-for-switch.md): Enhanced switch statement.
-- **New Garbage Collector (ZGC)**: Improved performance.
+- [**New Garbage Collector (ZGC)**](java-new-garbage-collector-ZGC.md): Improved performance.
 - **Remove Deprecated Features**: Removed **RMI Activation**, **Applets**, and more.
 
 ---
@@ -133,8 +133,8 @@ These features focus on performance improvements, language enhancements, APIs, a
 
 ### 🔑 **Main Features:**
 
-- **UTF-8 by Default**: Standardized text encoding.
-- **Simple Web Server**: Lightweight HTTP server for prototyping.
+- [**UTF-8 by Default**](java-utf8-by-default-feature.md): Standardized text encoding.
+- [**Simple Web Server**](java-simple-web-server.md): Lightweight HTTP server for prototyping.
 - [**Pattern Matching for Switch (Preview)**](java-pattern-matching-for-switch.md): 
   Continued improvements.
 
@@ -145,7 +145,8 @@ These features focus on performance improvements, language enhancements, APIs, a
 ### 🔑 **Main Features:**
 
 - [**Virtual Threads (Preview)**](java21-virtual-threads.md): Lightweight threads for scalability.
-- **Structured Concurrency (Preview)**: Simplifies handling multiple concurrent tasks.
+- [**Structured Concurrency (Preview)**](java-structured-concurrency-feature.md): Simplifies handling multiple 
+  concurrent tasks.
 - [**Pattern Matching for Switch**](java-pattern-matching-for-switch.md): Further refined.
 
 ---
@@ -155,7 +156,7 @@ These features focus on performance improvements, language enhancements, APIs, a
 ### 🔑 **Main Features:**
 
 - [**Virtual Threads (Second Preview)**](java21-virtual-threads.md): Continued improvements.
-- **Record Patterns (Preview)**: Destructuring patterns for data classes.
+- [**Record Patterns (Preview)**](java-record-patterns-feature.md): Destructuring patterns for data classes.
 - [**Pattern Matching for Switch**](java-pattern-matching-for-switch.md): Finalized 
   feature.
 
@@ -166,31 +167,31 @@ These features focus on performance improvements, language enhancements, APIs, a
 ### 🔑 **Main Features:**
 
 - [**Virtual Threads**](java21-virtual-threads.md): Finalized feature from Project Loom.
-- **Sequenced Collections**: New collections that maintain order.
-- **Record Patterns**: Finalized feature.
+- [**Sequenced Collections**](java-sequenced-collections.md): New collections that maintain order.
+- [**Record Patterns**](java-record-patterns-feature.md): Finalized feature.
 - [**Pattern Matching for `switch`**](java-pattern-matching-for-switch.md): Finalized feature.
-- **New `String Templates` (Preview)**: Simplifies string interpolation.
+- [**New `String Templates` (Preview)**](java-string-templates.md): Simplifies string interpolation.
 
 ---
 
 ## ✅ **Summary of Key Java Features by Version:**
 
-| **Java Version** | **Key Features**                                                                                                       | **Type** |
-|------------------|------------------------------------------------------------------------------------------------------------------------|----------|
-| Java 8           | Lambdas, Stream API, Date-Time API                                                                                     | Major    |
-| Java 9           | Modules, JShell, Factory Methods for Collections                                                                       | Major    |
-| Java 10          | `var` Keyword                                                                                                          | Minor    |
-| Java 11          | HTTP Client API, String Methods                                                                                        | LTS      |
-| Java 12          | Switch Expressions (Preview)                                                                                           | Minor    |
-| Java 13          | [Text Blocks](java15-text-blocks.md) (Preview)                                                                         | Minor    |
-| Java 14          | [Pattern Matching for `instanceof`](java16-pattern-matching-for-instanceof.md), [Records (Preview)](java16-records.md) | Minor    |
-| Java 15          | [Text Blocks](java15-text-blocks.md), [Sealed Classes (Preview)](java17-sealed-classes.md)                             | Minor    |
-| Java 16          | [Records](java16-records.md), [Stream.toList()](java16-stream-features.md)                                                                | Minor    |
-| Java 17          | [Sealed Classes](java17-sealed-classes.md), [Pattern Matching for Switch](java-pattern-matching-for-switch.md)         | LTS      |
-| Java 18          | UTF-8 by Default, Simple Web Server                                                                                    | Minor    |
-| Java 19          | [Virtual Threads (Preview)](java21-virtual-threads.md), Structured Concurrency                                         | Major    |
-| Java 20          | [Virtual Threads (Second Preview)](java21-virtual-threads.md), Record Patterns                                         | Minor    |
-| Java 21          | [Virtual Threads](java21-virtual-threads.md), Sequenced Collections, String Templates                                  | LTS      |
+| **Java Version** | **Key Features**                                                                                                                                   | **Type** |
+|------------------|----------------------------------------------------------------------------------------------------------------------------------------------------|----------|
+| Java 8           | Lambdas, Stream API, Date-Time API                                                                                                                 | Major    |
+| Java 9           | Modules, JShell, Factory Methods for Collections                                                                                                   | Major    |
+| Java 10          | [`var` Keyword](java10-var-keyword.md)                                                                                                             | Minor    |
+| Java 11          | [HTTP Client API](java11-http-client-api.md), [String Methods](java11-string-methods.md)                                                           | LTS      |
+| Java 12          | [Switch Expressions (Preview)](java14-switch-expressions.md)                                                                                       | Minor    |
+| Java 13          | [Text Blocks](java15-text-blocks.md) (Preview)                                                                                                     | Minor    |
+| Java 14          | [Pattern Matching for `instanceof`](java16-pattern-matching-for-instanceof.md), [Records (Preview)](java16-records.md)                             | Minor    |
+| Java 15          | [Text Blocks](java15-text-blocks.md), [Sealed Classes (Preview)](java17-sealed-classes.md)                                                         | Minor    |
+| Java 16          | [Records](java16-records.md), [Stream.toList()](java16-stream-features.md)                                                                         | Minor    |
+| Java 17          | [Sealed Classes](java17-sealed-classes.md), [Pattern Matching for Switch](java-pattern-matching-for-switch.md)                                     | LTS      |
+| Java 18          | [UTF-8 by Default](java-utf8-by-default-feature.md), [Simple Web Server](java-simple-web-server.md)                                                | Minor    |
+| Java 19          | [Virtual Threads (Preview)](java21-virtual-threads.md), [Structured Concurrency](java-structured-concurrency-feature.md)                           | Major    |
+| Java 20          | [Virtual Threads (Second Preview)](java21-virtual-threads.md), [Record Patterns](java-record-patterns-feature.md)                                  | Minor    |
+| Java 21          | [Virtual Threads](java21-virtual-threads.md), [Sequenced Collections](java-sequenced-collections.md), [String Templates](java-string-templates.md) | LTS      |
 
 ---
 
