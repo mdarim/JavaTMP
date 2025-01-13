@@ -101,7 +101,7 @@ These features focus on performance improvements, language enhancements, APIs, a
 ### 🔑 **Main Features:**
 
 - [**Text Blocks**](java15-text-blocks.md): Finalized feature.
-- **Sealed Classes (Preview)**: Control which classes can extend a class.
+- [**Sealed Classes (Preview)**](java17-sealed-classes.md): Control which classes can extend a class.
 - **Hidden Classes**: Used by frameworks to create classes at runtime.
 
 ---
@@ -122,7 +122,7 @@ These features focus on performance improvements, language enhancements, APIs, a
 
 ### 🔑 **Main Features:**
 
-- **Sealed Classes**: Finalized feature.
+- [**Sealed Classes**](java17-sealed-classes.md): Finalized feature.
 - **Pattern Matching for Switch (Preview)**: Enhanced switch statement.
 - **New Garbage Collector (ZGC)**: Improved performance.
 - **Remove Deprecated Features**: Removed **RMI Activation**, **Applets**, and more.
@@ -182,9 +182,9 @@ These features focus on performance improvements, language enhancements, APIs, a
 | Java 12          | Switch Expressions (Preview)                                                                                           | Minor    |
 | Java 13          | [Text Blocks](java15-text-blocks.md) (Preview)                                                                         | Minor    |
 | Java 14          | [Pattern Matching for `instanceof`](java16-pattern-matching-for-instanceof.md), [Records (Preview)](java16-records.md) | Minor    |
-| Java 15          | [Text Blocks](java15-text-blocks.md), Sealed Classes (Preview)                                                         | Minor    |
+| Java 15          | [Text Blocks](java15-text-blocks.md), [Sealed Classes (Preview)](java17-sealed-classes.md)                             | Minor    |
 | Java 16          | [Records](java16-records.md), Stream.toList()                                                                          | Minor    |
-| Java 17          | Sealed Classes, Pattern Matching for Switch                                                                            | LTS      |
+| Java 17          | [Sealed Classes](java17-sealed-classes.md), Pattern Matching for Switch                                                | LTS      |
 | Java 18          | UTF-8 by Default, Simple Web Server                                                                                    | Minor    |
 | Java 19          | Virtual Threads (Preview), Structured Concurrency                                                                      | Major    |
 | Java 20          | Virtual Threads (Second Preview), Record Patterns                                                                      | Minor    |
