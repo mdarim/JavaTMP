@@ -2,7 +2,6 @@ buildscript {
     repositories {
         mavenLocal()
         mavenCentral()
-        jcenter()
         maven {
             url "https://plugins.gradle.org/m2/"
         }
@@ -21,7 +20,6 @@ plugins {
     id 'idea'
     id 'eclipse'
     id 'org.springframework.boot' version "${springBoot}" apply false
-//    id 'io.spring.dependency-management' version "${dependencyManagement}"
 }
 
 apply plugin: 'io.spring.dependency-management'
@@ -100,9 +98,12 @@ subprojects {
         testAnnotationProcessor 'org.projectlombok:lombok'
 
 //        developmentOnly 'org.springframework.boot:spring-boot-devtools'
-        testImplementation('org.springframework.boot:spring-boot-starter-test') {
-            exclude group: 'org.junit.vintage', module: 'junit-vintage-engine'
-        }
+//        testImplementation('org.springframework.boot:spring-boot-starter-test') {
+//            exclude group: 'org.junit.vintage', module: 'junit-vintage-engine'
+//        }
+
+        testImplementation 'org.springframework.boot:spring-boot-starter-test'
+        testRuntimeOnly 'org.junit.platform:junit-platform-launcher'
 
         implementation 'jakarta.xml.bind:jakarta.xml.bind-api'
         implementation 'org.glassfish.jaxb:jaxb-runtime'
@@ -125,15 +126,15 @@ subprojects {
     }
 
     // Skips tests if you do not provide prod project property from command line
-    test.onlyIf { project.hasProperty('prod') }
+//    test.onlyIf { project.hasProperty('prod') }
 
 }
+//
+//test {
+//    exclude 'com/javatmp/**/*'
+//}
+//test {
+//    exclude '**/*'
+//}
 
-test {
-    exclude 'com/javatmp/**/*'
-}
-test {
-    exclude '**/*'
-}
-
-test.onlyIf { false == true }
+//test.onlyIf { false == true }
