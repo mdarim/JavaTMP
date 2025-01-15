@@ -123,7 +123,7 @@ requirements.
 - [Cloud native development principles with spring](articles/cloud-native-development-principles-with-spring.md)
 - [Use Spring Cloud with Docker and kubernetes](articles/use-spring-cloud-with-docker-and-kubernetes.md)
   (articles/cloud-native-development-principles-with-spring.md)
-- 
+- [Spring Boot Application Analysis and Design Plan](articles/spring-boot-application-analysis-and-design-plan.md)
 ---
 
 This job description aims to attract candidates with both technical expertise in Java
