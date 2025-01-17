@@ -126,7 +126,7 @@ subprojects {
     }
 
     // Skips tests if you do not provide prod project property from command line
-//    test.onlyIf { project.hasProperty('prod') }
+    test.onlyIf { project.hasProperty('prod') }
 
 }
 //
@@ -136,5 +136,5 @@ subprojects {
 //test {
 //    exclude '**/*'
 //}
-
+//
 //test.onlyIf { false == true }
