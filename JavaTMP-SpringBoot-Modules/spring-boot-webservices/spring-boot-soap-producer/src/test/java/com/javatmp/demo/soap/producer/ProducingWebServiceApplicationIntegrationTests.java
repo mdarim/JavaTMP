@@ -17,17 +17,19 @@
 package com.javatmp.demo.soap.producer;
 
 import io.spring.guides.gs_producing_web_service.GetCountryRequest;
+import lombok.extern.slf4j.Slf4j;
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
 import org.springframework.boot.test.context.SpringBootTest;
-import org.springframework.boot.test.context.SpringBootTest.WebEnvironment;
+import org.springframework.boot.test.web.server.LocalServerPort;
 import org.springframework.oxm.jaxb.Jaxb2Marshaller;
 import org.springframework.util.ClassUtils;
 import org.springframework.ws.client.core.WebServiceTemplate;
 
 import static org.assertj.core.api.Assertions.assertThat;
 
-@SpringBootTest(webEnvironment = WebEnvironment.RANDOM_PORT)
+@Slf4j
+@SpringBootTest(webEnvironment = SpringBootTest.WebEnvironment.RANDOM_PORT)
 public class ProducingWebServiceApplicationIntegrationTests {
 
 	private Jaxb2Marshaller marshaller = new Jaxb2Marshaller();
@@ -49,5 +51,5 @@ public class ProducingWebServiceApplicationIntegrationTests {
 
 		assertThat(ws.marshalSendAndReceive("http://localhost:"
 				+ port + "/ws", request) != null);
-    }
+	}
 }

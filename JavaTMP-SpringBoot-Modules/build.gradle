@@ -122,11 +122,16 @@ subprojects {
 
     bootJar {
         enabled = false
-        mainClass = ''
+//        mainClass = ''
     }
 
     // Skips tests if you do not provide prod project property from command line
-    test.onlyIf { project.hasProperty('prod') }
+    // ex: `./gradlew build -Pprod`
+//    tasks.named('test') {
+//        onlyIf {
+//            project.hasProperty('prod')
+//        }
+//    }
 
 }
 //

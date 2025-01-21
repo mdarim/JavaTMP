@@ -2,18 +2,25 @@ package com.javatmp.demo.soap.producer;
 
 import io.spring.guides.gs_producing_web_service.Country;
 import io.spring.guides.gs_producing_web_service.Currency;
+import jakarta.annotation.PostConstruct;
+import org.springframework.beans.factory.InitializingBean;
 import org.springframework.stereotype.Component;
 import org.springframework.util.Assert;
 
-import javax.annotation.PostConstruct;
 import java.util.HashMap;
 import java.util.Map;
 
 @Component
-public class CountryRepository {
+public class CountryRepository implements InitializingBean {
+
 	private static final Map<String, Country> countries = new HashMap<>();
 
-	@PostConstruct
+	@Override
+	public void afterPropertiesSet() {
+		// initialization logic
+		this.initData();
+	}
+
 	public void initData() {
 		Country spain = new Country();
 		spain.setName("Spain");

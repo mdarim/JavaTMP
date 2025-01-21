@@ -1,6 +1,5 @@
 
-group = 'com.example'
-version = '0.0.1-SNAPSHOT'
+
 sourceCompatibility = JavaVersion.VERSION_23
 
 // tag::xsd[]
@@ -36,7 +35,6 @@ task genJaxb {
 compileJava.dependsOn genJaxb
 // end::xsd[]
 
-// tag::jaxb[]
 configurations {
     jaxb
 }
