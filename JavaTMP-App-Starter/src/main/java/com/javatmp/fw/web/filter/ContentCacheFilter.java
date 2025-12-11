@@ -5,8 +5,8 @@ import com.javatmp.fw.web.filter.util.CacheResponseWrapper;
 import java.io.*;
 import java.util.*;
 import java.util.concurrent.ConcurrentHashMap;
-import javax.servlet.*;
-import javax.servlet.http.*;
+import jakarta.servlet.*;
+import jakarta.servlet.http.*;
 import lombok.extern.slf4j.Slf4j;
 
 @Slf4j

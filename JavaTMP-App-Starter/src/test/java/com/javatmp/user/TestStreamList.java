@@ -9,8 +9,8 @@ import com.javatmp.module.user.entity.User;
 import com.javatmp.module.user.service.UserService;
 import java.util.Optional;
 import java.util.stream.Stream;
-import javax.persistence.EntityManager;
-import javax.persistence.PersistenceException;
+import jakarta.persistence.EntityManager;
+import jakarta.persistence.PersistenceException;
 import org.hibernate.jpa.QueryHints;
 
 /**

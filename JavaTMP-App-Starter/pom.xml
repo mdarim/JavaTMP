@@ -20,6 +20,12 @@
 
     <properties>
         <java.version>23</java.version>
+        <!--
+        if your project relies on annotation processors
+        (e.g. Lombok, JPA metamodel generation, MapStruct etc.), you need to explicitly
+        configure them in your pom.xml
+        -->
+        <maven.compiler.proc>full</maven.compiler.proc>
     </properties>
 
     <dependencies>
@@ -82,8 +88,8 @@
         <dependency>
             <groupId>org.projectlombok</groupId>
             <artifactId>lombok</artifactId>
-            <version>1.18.24</version> <!-- Use the latest stable version -->
-<!--            <scope>provided</scope>-->
+            <version>1.18.30</version> <!-- Use the latest stable version -->
+            <scope>provided</scope>
         </dependency>
 
         <!-- https://mvnrepository.com/artifact/org.hibernate/hibernate-jpamodelgen -->
@@ -94,7 +100,7 @@
 <!--        </dependency>-->
         <!-- https://mvnrepository.com/artifact/org.hibernate/hibernate-jpamodelgen -->
         <dependency>
-            <groupId>org.hibernate</groupId>
+            <groupId>org.hibernate.orm</groupId>
             <artifactId>hibernate-jpamodelgen</artifactId>
             <version>6.6.6.Final</version>
             <type>pom</type>
@@ -115,9 +121,9 @@
         </dependency>
         <!-- https://mvnrepository.com/artifact/nl.captcha/simplecaptcha -->
         <dependency>
-            <groupId>nl.captcha</groupId>
-            <artifactId>simplecaptcha</artifactId>
-            <version>1.2.1</version>
+            <groupId>com.liferay</groupId>
+            <artifactId>nl.captcha.simplecaptcha</artifactId>
+            <version>1.1.1.JAKARTA-LIFERAY-PATCHED-1</version>
         </dependency>
         <!-- https://mvnrepository.com/artifact/javax.servlet/jstl -->
 <!--        <dependency>-->
@@ -158,28 +164,40 @@
             <version>1.13.1</version>
             <scope>test</scope>
         </dependency>
+
+        <dependency>
+            <groupId>jakarta.persistence</groupId>
+            <artifactId>jakarta.persistence-api</artifactId>
+            <version>3.2.0</version>  <!-- or 3.1.0 / 3.0.0 depending on your setup -->
+        </dependency>
+
     </dependencies>
 
     <build>
         <plugins>
 
-<!--            <plugin>-->
-<!--                <groupId>org.apache.maven.plugins</groupId>-->
-<!--                <artifactId>maven-compiler-plugin</artifactId>-->
-<!--                <version>3.13.0</version>-->
-<!--                <configuration>-->
-<!--                    <source>${java.version}</source>-->
-<!--                    <target>${java.version}</target>-->
-<!--                    <annotationProcessorPaths>-->
-<!--                        <path>-->
-<!--                            <groupId>org.projectlombok</groupId>-->
-<!--                            <artifactId>lombok</artifactId>-->
-<!--                            <version>1.18.24</version>-->
-<!--                        </path>-->
-<!--                    </annotationProcessorPaths>-->
-<!--                </configuration>-->
-<!--            </plugin>-->
-<!--    -->
+            <plugin>
+                <groupId>org.apache.maven.plugins</groupId>
+                <artifactId>maven-compiler-plugin</artifactId>
+                <version>3.13.0</version>
+                <configuration>
+                    <source>${java.version}</source>
+                    <target>${java.version}</target>
+                    <annotationProcessorPaths>
+                        <path>
+                            <groupId>org.projectlombok</groupId>
+                            <artifactId>lombok</artifactId>
+                            <version>1.18.30</version>
+                        </path>
+                        <path>
+                            <groupId>org.hibernate</groupId>
+                            <artifactId>hibernate-jpamodelgen</artifactId>
+                            <version>6.6.6.Final</version>
+                        </path>
+                    </annotationProcessorPaths>
+                </configuration>
+            </plugin>
+
             <plugin>
                 <groupId>org.springframework.boot</groupId>
                 <artifactId>spring-boot-maven-plugin</artifactId>

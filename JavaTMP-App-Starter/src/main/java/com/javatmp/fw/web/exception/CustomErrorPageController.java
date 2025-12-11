@@ -26,9 +26,9 @@ public class CustomErrorPageController implements ErrorController {
 
         return "/pages/system/error.jsp";
     }
-
-    @Override
-    public String getErrorPath() {
-        return "/error";
-    }
+//
+//    @Override
+//    public String getErrorPath() {
+//        return "/error";
+//    }
 }

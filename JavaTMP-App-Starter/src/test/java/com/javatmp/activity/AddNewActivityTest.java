@@ -7,7 +7,7 @@ package com.javatmp.activity;
 
 import com.javatmp.module.user.repository.UserActivityRepository;
 import java.util.List;
-import javax.persistence.Tuple;
+import jakarta.persistence.Tuple;
 import lombok.extern.slf4j.Slf4j;
 import org.junit.jupiter.api.Test;
 import org.springframework.beans.factory.annotation.Autowired;

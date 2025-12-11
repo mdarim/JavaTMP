@@ -7,7 +7,7 @@ package com.javatmp.user;
 
 import com.javatmp.module.user.entity.User;
 import com.javatmp.module.user.service.UserService;
-import javax.persistence.PersistenceException;
+import jakarta.persistence.PersistenceException;
 
 /**
  *

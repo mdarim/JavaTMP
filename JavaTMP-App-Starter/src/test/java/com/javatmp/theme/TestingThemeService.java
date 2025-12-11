@@ -11,7 +11,7 @@ import com.javatmp.module.user.service.ThemeService;
 import java.sql.SQLException;
 import java.text.ParseException;
 import java.util.List;
-import javax.persistence.EntityManager;
+import jakarta.persistence.EntityManager;
 
 public class TestingThemeService {
 

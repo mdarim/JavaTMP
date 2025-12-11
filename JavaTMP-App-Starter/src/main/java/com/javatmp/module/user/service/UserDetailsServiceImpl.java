@@ -4,7 +4,7 @@ import com.javatmp.module.user.entity.LoggedInUser;
 import com.javatmp.module.user.entity.User;
 import com.javatmp.module.user.repository.UserRepository;
 import java.util.Collection;
-import javax.transaction.Transactional;
+import jakarta.transaction.Transactional;
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.security.core.GrantedAuthority;
